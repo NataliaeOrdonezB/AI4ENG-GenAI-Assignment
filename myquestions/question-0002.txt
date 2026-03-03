@@ -1,0 +1,11 @@
+Título: Análisis de Variación de Precios por Producto
+Enunciado:
+Recibes un DataFrame con el histórico de precios de diferentes productos. Las columnas son: 'fecha', 'producto_id' y 'precio'.
+
+Escribe una función llamada analizar_variacion_precios(df) que realice lo siguiente:
+1. Asegúrese de que la columna 'fecha' sea de tipo datetime.
+2. Ordene el DataFrame por 'producto_id' y 'fecha' de manera ascendente.
+3. Para cada producto, calcule una nueva columna llamada 'cambio_precio' que sea la diferencia entre el precio actual y el precio del registro anterior de ese mismo producto.
+4. Calcule otra columna llamada 'es_subida' que contenga un valor booleano (True/False): True si el 'cambio_precio' es mayor a cero, y False en caso contrario.
+5. Elimine las filas que queden con valores nulos (NaN) en la columna 'cambio_precio' (que normalmente serán los primeros registros de cada producto).
+6. Devuelva el DataFrame resultante con las columnas originales más las dos nuevas.
