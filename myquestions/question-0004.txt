@@ -1,0 +1,12 @@
+Título: Segmentación de Clientes y Cálculo de Distancias a Centroides
+Enunciado:
+Recibes una matriz de datos (X) con características de clientes y necesitas realizar una segmentación.
+
+Escribe una función llamada segmentar_y_calcular_distancias(X, n_clusters) que realice lo siguiente:
+1. Utilice el algoritmo KMeans de sklearn con el número de clusters especificado (n_clusters) y un random_state=42.
+2. Entrene el modelo y obtenga las etiquetas de los clusters para cada punto de X.
+3. Obtenga las coordenadas de los centroides finales del modelo.
+4. Para cada punto en X, calcule la distancia euclidiana hacia el centroide del cluster que le fue asignado.
+5. Devuelva una tupla con dos elementos:
+   - Un array de numpy con las etiquetas (labels) de los clusters.
+   - Un array de numpy con las distancias calculadas para cada punto.
