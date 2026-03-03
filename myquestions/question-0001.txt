@@ -1,1 +1,10 @@
+Título: Generación de métricas agregadas por cliente
+Enunciado:
+Se dispone de un DataFrame de pandas que contiene información de transacciones comerciales con las siguientes columnas: 'cliente_id', 'categoria' y 'monto'.
 
+Escribe una función llamada calcular_metricas_clientes(df) que realice lo siguiente:
+1. Para cada cliente_id, calcule el total gastado (suma de monto), el promedio de gasto por transacción y el número total de transacciones.
+2. Para cada combinación de (cliente_id, categoria), calcule el total gastado en esa categoría específica.
+3. Cree una nueva columna llamada 'porcentaje_categoria' que represente qué parte del gasto total del cliente corresponde a esa categoría (total_categoria / total_gastado_cliente).
+4. Devuelva un DataFrame con las columnas: 'cliente_id', 'categoria', 'total_categoria', 'total_gastado_cliente', 'promedio_gasto_cliente', 'num_transacciones_cliente' y 'porcentaje_categoria'.
+5. El resultado debe estar ordenado por 'cliente_id' y 'categoria' de forma ascendente.
