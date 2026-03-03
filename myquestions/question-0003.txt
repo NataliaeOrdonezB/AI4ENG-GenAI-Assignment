@@ -1,0 +1,11 @@
+Título: Evaluación de Clasificador de Riesgo con Matriz de Confusión
+Enunciado:
+Debes evaluar un modelo de clasificación para predecir si un cliente es de "alto riesgo" (1) o "bajo riesgo" (0). 
+
+Escribe una función llamada evaluar_clasificador_riesgo(X, y) que realice lo siguiente:
+1. Divida los datos en conjuntos de entrenamiento (80%) y prueba (20%) utilizando train_test_split con un random_state=42.
+2. Instancie y entrene un modelo de Bosque Aleatorio (RandomForestClassifier) con n_estimators=50 y random_state=42.
+3. Realice las predicciones sobre el conjunto de prueba.
+4. Calcule la matriz de confusión comparando los valores reales de prueba con las predicciones.
+5. Extraiga de la matriz de confusión el número de Falsos Positivos (FP) y Falsos Negativos (FN).
+6. Devuelva una tupla que contenga: (el modelo entrenado, un diccionario con las llaves 'falsos_positivos' y 'falsos_negativos').
