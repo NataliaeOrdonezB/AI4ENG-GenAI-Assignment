@@ -1,2 +1,2 @@
-Nombre: Natalia XXXXX
-Correo institucional: xxxx@xxxx.edu
+Nombre: Natalia Ordoñez Berdugo
+Correo institucional: nataliae.ordonez@udea.edu.co
